@@ -4,6 +4,11 @@ title: About
 permalink: /about/
 ---
 
+[삼나무](https://ko.wikipedia.org/wiki/%EC%84%B8%EC%BF%BC%EC%9D%B4%EC%95%84)는 세계에서 가장 큰 나무입니다. 시작은 미미하나 끝은 창대하기를 믿으며 배우고 있습니다.
+
+이는 지킬 테마를 바탕으로 제작됐습니다. 
+당신의 지킬 테마를 커스터마이징할 수 있는 더 많은 정보를 찾을 수 있습니다.
+
 This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
 
 You can find the source code for Minima at GitHub:
