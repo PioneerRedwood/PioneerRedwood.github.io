@@ -44,6 +44,15 @@ input, select, textarea {
   margin-left: 10px;
 }
 
+#login-form {
+  margin-bottom: 20px;
+}
+
+#login-form input:first-child {
+  width: 70%;
+  font-size: 1.2em;
+}
+
 #todo-div #todo-form input {
   width: 100%;
   font-size: 1.2em;
