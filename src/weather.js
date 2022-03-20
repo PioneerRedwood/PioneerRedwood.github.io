@@ -23,7 +23,8 @@ function searchWeatherHandler(error, data) {
     if(error !== null) {
         weatherStatus.textContent = `There is a problem to get weather data X_X [error: ${error}]`;
     } else {
-        weatherStatus.textContent = `The current temperature is ${data.main.temp}°.`;
+        // console.log(JSON.stringify(data));
+        weatherStatus.textContent = `Here, ${data.name}. The current temperature is ${data.main.temp}°, the sky state is ${data.weather[0].main}.`;
     }
 } 
 

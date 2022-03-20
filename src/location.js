@@ -11,8 +11,13 @@ function createMap(lat, lon) {
     };
 
     const map = new L.map(mapContainer, mapOptions);
-    const layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
-    map.addLayer(layer);
+    if(map === null) {
+        const layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+        map.addLayer(layer);
+    } else {
+        mapContainer.innerHTML = "<p>Sorry.. can't load the map</p>";
+    }
+
 }
 
 function geoSuccessHandler(position) {
