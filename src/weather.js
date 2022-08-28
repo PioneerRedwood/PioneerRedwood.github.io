@@ -4,40 +4,45 @@ const WEATHER_API_KEY = "cb13e50602fb0a383cbcc5ff1509258c";
 
 // refer https://openweathermap.org/api
 function updateCurrentWeather(url, completionHandler) {
-    const xmlHttpRequest = new XMLHttpRequest();
-    xmlHttpRequest.open("GET", url, true);
-    xmlHttpRequest.responseType = "json";
-    xmlHttpRequest.onload = () => {
-        const status = xmlHttpRequest.status;
+  const xmlHttpRequest = new XMLHttpRequest();
+  xmlHttpRequest.open("GET", url, true);
+  xmlHttpRequest.responseType = "json";
+  xmlHttpRequest.onload = () => {
+    const status = xmlHttpRequest.status;
 
-        if (status == 200) {
-            completionHandler(null, xmlHttpRequest.response);
-        } else {
-            completionHandler(status, xmlHttpRequest.response);
-        }
-    };
-    xmlHttpRequest.send();
+    if (status == 200) {
+      completionHandler(null, xmlHttpRequest.response);
+    } else {
+      completionHandler(status, xmlHttpRequest.response);
+    }
+  };
+  xmlHttpRequest.send();
 }
 
 function searchWeatherHandler(error, data) {
-    if(error !== null) {
-        weatherStatus.textContent = `There is a problem to get weather data X_X [error: ${error}]`;
-    } else {
-        // console.log(JSON.stringify(data));
-        weatherStatus.textContent = `Here, ${data.name}. The current temperature is ${data.main.temp}°, the sky state is ${data.weather[0].main}.`;
-    }
-} 
+  if (error !== null) {
+    weatherStatus.textContent = `There is a problem to get weather data X_X [error: ${error}]`;
+  } else {
+    // console.log(JSON.stringify(data));
+    weatherStatus.textContent = `Here, ${data.name}. The current temperature is ${data.main.temp}°, the sky state is ${data.weather[0].main}.`;
+  }
+}
 
 function searchWeather() {
-    const lat = localStorage.getItem("latitude");
-    const lon = localStorage.getItem("longitude");
+  const lat = localStorage.getItem("latitude");
+  const lon = localStorage.getItem("longitude");
 
-    if (lat === null && lon === null) {
-        weatherStatus.textContent = "Can't find the latitude and the longitude inside of localStorage";
-    } else {
-        updateCurrentWeather(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${WEATHER_API_KEY}&units=metric`, searchWeatherHandler);
-    }
+  if (lat === null && lon === null) {
+    weatherStatus.textContent =
+      "Can't find the latitude and the longitude inside of localStorage";
+  } else {
+    updateCurrentWeather(
+      `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${WEATHER_API_KEY}&units=metric`,
+      searchWeatherHandler
+    );
+  }
 }
 
 // searchWeatherButton.addEventListener("click", searchWeather);
-setTimeout(searchWeather, 500);
+// setTimeout(searchWeather, 100);
+searchWeather();
