@@ -1,0 +1,20 @@
+---
+layout: post
+title: "New start"
+date: 2023-04-09
+categories: notes
+---
+
+# Once upon a time
+
+**새로운 시작.** *옛날 옛적에 ...*
+
+## 기록하고 싶은 것들
+- 프로그래밍
+- 음악
+- 건강 및 운동
+- 영어
+- 책
+- 여행
+- 산업과 기업
+- 역사
