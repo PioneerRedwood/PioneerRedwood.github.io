@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Becoming a Writer"
-date: 2023-04-09
+date: 2023-04-10
 category: notes
 ---
 
