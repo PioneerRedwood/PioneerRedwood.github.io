@@ -80,5 +80,5 @@ category: projects
 배포는 과연 어떻게 할 수 있을까? .. 🤠(열린결말) 
 
 ## 링크
-[GitHub 링크](https://github.com/PioneerRedwood/GameLauncherWPF)
+[GitHub 링크](https://github.com/PioneerRedwood/GameLauncherWPF/tree/master/GroguLauncher)
 
