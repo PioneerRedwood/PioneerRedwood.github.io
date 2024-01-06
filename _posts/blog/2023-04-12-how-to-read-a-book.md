@@ -2,7 +2,7 @@
 layout: post
 title: "How to Read a Book"
 date: 2023-04-12
-categories: notes book
+categories: blog
 ---
 
 

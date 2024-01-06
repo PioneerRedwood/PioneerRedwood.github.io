@@ -2,7 +2,7 @@
 layout: post
 title: "Stretching"
 date: 2023-04-13
-categories: notes
+categories: blog
 ---
 
 

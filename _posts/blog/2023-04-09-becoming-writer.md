@@ -2,7 +2,7 @@
 layout: post
 title: "Becoming a Writer"
 date: 2023-04-10
-category: notes
+category: blog
 ---
 
 

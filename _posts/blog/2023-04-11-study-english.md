@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Socializing"
+title: "Studying English"
 date: 2023-04-11
-categories: notes english
+categories: blog
 ---
 
 
